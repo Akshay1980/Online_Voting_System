@@ -28,8 +28,8 @@ public class NewJFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         panel1 = new java.awt.Panel();
-        jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -40,16 +40,18 @@ public class NewJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        panel1.setBackground(new java.awt.Color(153, 153, 153));
         panel1.setLayout(null);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication3/voting site.jpg"))); // NOI18N
-        panel1.add(jLabel1);
-        jLabel1.setBounds(260, 0, 500, 440);
-
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Megha Mathur\\Desktop\\logo.png")); // NOI18N
-        jLabel2.setText("jLabel2");
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Megha Mathur\\Desktop\\voting site.jpg")); // NOI18N
         panel1.add(jLabel2);
-        jLabel2.setBounds(10, 0, 260, 440);
+        jLabel2.setBounds(50, 250, 740, 310);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Megha Mathur\\Desktop\\logo.png")); // NOI18N
+        panel1.add(jLabel1);
+        jLabel1.setBounds(240, 0, 760, 250);
+
+        jMenuBar1.setBackground(new java.awt.Color(204, 204, 255));
 
         jMenu1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jMenu1.setText("HOME");
@@ -72,6 +74,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jMenu5.setText("REGISTRATION");
         jMenuBar1.add(jMenu5);
 
+        jMenu6.setBackground(new java.awt.Color(153, 153, 255));
         jMenu6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jMenu6.setText("RESULT");
         jMenuBar1.add(jMenu6);
@@ -86,9 +89,7 @@ public class NewJFrame extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(panel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(panel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
