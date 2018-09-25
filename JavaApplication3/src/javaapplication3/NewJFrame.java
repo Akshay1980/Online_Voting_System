@@ -29,6 +29,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -40,6 +41,8 @@ public class NewJFrame extends javax.swing.JFrame {
         });
 
         jLabel1.setText("jLabel1");
+
+        jButton2.setText("jButton2");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -54,6 +57,10 @@ public class NewJFrame extends javax.swing.JFrame {
                         .addGap(302, 302, 302)
                         .addComponent(jLabel1)))
                 .addContainerGap(362, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton2)
+                .addGap(246, 246, 246))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -62,7 +69,9 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(68, 68, 68)
                 .addComponent(jButton1)
-                .addContainerGap(240, Short.MAX_VALUE))
+                .addGap(68, 68, 68)
+                .addComponent(jButton2)
+                .addContainerGap(147, Short.MAX_VALUE))
         );
 
         pack();
@@ -109,6 +118,7 @@ jgfhkvjbmbm        // TODO add your handling code here:
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
