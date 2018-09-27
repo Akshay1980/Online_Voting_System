@@ -29,7 +29,6 @@ public class NewJFrame extends javax.swing.JFrame {
 
         panel1 = new java.awt.Panel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -40,16 +39,12 @@ public class NewJFrame extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        panel1.setBackground(new java.awt.Color(153, 153, 153));
+        panel1.setBackground(new java.awt.Color(255, 204, 204));
         panel1.setLayout(null);
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Megha Mathur\\Desktop\\voting site.jpg")); // NOI18N
         panel1.add(jLabel2);
-        jLabel2.setBounds(50, 250, 740, 310);
-
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Megha Mathur\\Desktop\\logo.png")); // NOI18N
-        panel1.add(jLabel1);
-        jLabel1.setBounds(240, 0, 760, 250);
+        jLabel2.setBounds(40, -60, 920, 660);
 
         jMenuBar1.setBackground(new java.awt.Color(204, 204, 255));
 
@@ -131,7 +126,6 @@ public class NewJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
