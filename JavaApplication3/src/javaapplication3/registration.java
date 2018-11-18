@@ -170,10 +170,8 @@ public class registration extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-NewJFrame home=new NewJFrame();
-registration register=new registration();
-home.setVisible(true);
-register.dispose();
+
+
 
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
