@@ -5,6 +5,14 @@
  */
 package javaapplication3;
 
+import java.beans.Statement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Apex
@@ -80,6 +88,11 @@ public class registration extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jButton2.setText("SUBMIT");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -177,6 +190,28 @@ register.dispose();
 
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+ int mobile=Integer.parseInt(jTextField1.getText());
+       
+try {
+         Class.forName("java.sql.DriverManager");
+     } catch (ClassNotFoundException ex) {
+         Logger.getLogger(registration.class.getName()).log(Level.SEVERE, null, ex);
+     }
+Connection con;
+     try {
+     
+         con = (Connection)DriverManager.getConnection ("jdbc:mysql://db4free.net:3306/prodatabase","voting", "data1234");
+         Statement stmt = (Statement) con.createStatement(); 
+         String query="INSERT INTO details VALUES ('"+mobile+"');";     
+         stmt.executeUpdate(query); 
+     } catch (SQLException ex) {
+         Logger.getLogger(registration.class.getName()).log(Level.SEVERE, null, ex);
+     }
+
+                // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
