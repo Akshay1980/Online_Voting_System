@@ -28,23 +28,78 @@ public class admin extends javax.swing.JFrame {
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
+        jPanel1 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(51, 0, 255));
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton1.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 51, 51));
+        jButton1.setText("VOTER'S LIST");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 230, 189, 45));
+
+        jButton2.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(204, 102, 255));
+        jButton2.setText("REGISTERED CANDIDATES");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 90, 189, 42));
+
+        jButton3.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(255, 51, 51));
+        jButton3.setText("SELECT CANDIDATES");
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 210, 201, 45));
+
+        jButton4.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(255, 102, 204));
+        jButton4.setText("SELECTED CANDIDATES");
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 80, 201, 45));
+
+        jButton5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(204, 0, 51));
+        jButton5.setText("VOTE COUNT");
+        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 350, 157, 45));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication3/stock-photo-admin-login-sign-made-of-wood-on-a-table-391517770.jpg"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1400, 760));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1352, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1366, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 754, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -83,5 +138,12 @@ public class admin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
