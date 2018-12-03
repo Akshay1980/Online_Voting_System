@@ -8,6 +8,7 @@ package javaapplication3;
 import java.beans.Statement;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -192,7 +193,20 @@ register.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
- int mobile=Integer.parseInt(jTextField1.getText());
+      String a=jTextField1.getText();
+       String b=jTextField2.getText();
+        String c=jTextField3.getText();
+         String d=jTextField4.getText();
+          String e=jTextField5.getText();
+           String f=jTextField6.getText();
+            String g=jTextField7.getText();
+        int h=Integer.parseInt(c);
+        int k=Integer.parseInt(e);
+       
+      
+        
+        
+        /*int mobile=Integer.parseInt(jTextField1.getText());
        
 try {
          Class.forName("java.sql.DriverManager");
@@ -205,12 +219,37 @@ Connection con;
          con = (Connection)DriverManager.getConnection ("jdbc:mysql://db4free.net:3306/prodatabase","voting", "data1234");
          Statement stmt = (Statement) con.createStatement(); 
          String query="INSERT INTO details VALUES ('"+mobile+"');";     
-         stmt.executeUpdate(query); 
+         int j=stmt.executeUpdate(); 
      } catch (SQLException ex) {
          Logger.getLogger(registration.class.getName()).log(Level.SEVERE, null, ex);
      }
 
                 // TODO add your handling code here:
+        */
+        //Class.forName("com.mysql.jdbc.Driver");  
+        try{
+Connection con=DriverManager.getConnection(  
+"jdbc:derby://localhost:1527/registration","data1234","d1234");  
+PreparedStatement st=con.prepareStatement("insert into candidate(FName,LName, Rnumber,Email,PNumber,Interest,Exper)values(?,?,?,?,?,?,?)");
+ 
+  st.setString(1, a);
+  st.setString(2, b);
+  st.setInt(3, h);
+  st.setString(4, d);
+  st.setInt(5, k);
+  st.setString(6, f);
+  st.setString(7, g);
+int j=st.executeUpdate();
+System.out.println(j+"record updated");
+
+      }catch(Exception l){ System.out.println(l);}  
+	     JOptionPane.showMessageDialog(this,"RECORD UPDATED");    // TODO add your handling code here:
+      
+        
+        
+        
+        
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
