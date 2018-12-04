@@ -5,11 +5,19 @@
  */
 package javaapplication3;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Ankit Jedinstvena
  */
 public class student_login extends javax.swing.JFrame {
+    private Object jTextField2;
 
     /**
      * Creates new form student_login
@@ -39,6 +47,7 @@ public class student_login extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1020, 646));
 
         jPanel1.setPreferredSize(new java.awt.Dimension(1366, 768));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -111,8 +120,7 @@ public class student_login extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    /**
+/**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
