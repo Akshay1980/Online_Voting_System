@@ -51,7 +51,7 @@ public class registration extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1020, 646));
+        setMinimumSize(new java.awt.Dimension(1366, 768));
         getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
@@ -182,7 +182,7 @@ int j=st.executeUpdate();
 System.out.println(j+"record updated");
 
       }catch(Exception l){ System.out.println(l);}  
-	     JOptionPane.showMessageDialog(this,"RECORD UPDATED");  
+	     JOptionPane.showMessageDialog(this,"Error");  
   // TODO add your handling code here:
       
    
