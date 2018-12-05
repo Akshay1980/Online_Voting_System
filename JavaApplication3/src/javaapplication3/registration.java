@@ -181,7 +181,7 @@ int j=st.executeUpdate();
 System.out.println(j+"record updated");
 
       }catch(Exception l){ System.out.println(l);}  
-	     JOptionPane.showMessageDialog(this,"Error");  
+	     JOptionPane.showMessageDialog(this,"RECORD UPDATED");  
   // TODO add your handling code here:
       
    
